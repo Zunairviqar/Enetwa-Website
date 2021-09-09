@@ -9,7 +9,8 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: Mallory_Compact_Medium;
   color: #444444;
 }
 
@@ -26,6 +27,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Jost", sans-serif;
 }
 
+@font-face {
+    font-family: Mallory_book;
+    src: url(Mallory_Book.ttf);
+}
+@font-face {
+    font-family: Mallory_compact;
+    src: url(Mallory_Compact_Medium.ttf);
+}
+@font-face {
+    font-family: Mallory_light;
+    src: url(Mallory_Compact_ExtraLight.ttf);
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -421,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #191b29;
+  background: #25467b;
 }
 
 #hero .container {
@@ -636,9 +649,11 @@ section {
     max-width: 40%;
   }
 }
+
+
 @media (max-width: 991px) {
   .img-fluid {
-      max-width: 60%;
+      max-width: 100%;
       height: auto;
   }
 }
