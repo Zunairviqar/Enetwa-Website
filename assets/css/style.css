@@ -24,21 +24,55 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Jost", sans-serif;
+  /* font-family: "Jost", sans-serif; */
+  font-family: Mallory_medium;
 }
 
 @font-face {
-    font-family: Mallory_book;
-    src: url(Mallory_Book.ttf);
+    font-family: Mallory_bold;
+    src: url(fonts/Mallory-Bold.otf);
 }
 @font-face {
-    font-family: Mallory_compact;
-    src: url(Mallory_Compact_Medium.ttf);
+    font-family: Mallory_medium;
+    src: url(fonts/Mallory-Medium.otf);
+}
+@font-face {
+    font-family: Mallory_book;
+    src: url(fonts/Mallory-Book.otf);
+}
+@font-face {
+    font-family: Mallory_extralight;
+    src: url(fonts/Mallory-ExtraLight.otf);
 }
 @font-face {
     font-family: Mallory_light;
-    src: url(Mallory_Compact_ExtraLight.ttf);
+    src: url(Mallory-Light.otf);
 }
+@font-face {
+    font-family: Mallory_ultra;
+    src: url(Mallory-Ultra.otf);
+}
+
+hr {
+  border-top: 1px solid rgba(255,255,255,.5);
+}
+
+.tvip{
+  color:#fff !important;
+  margin:0px !important;
+  font-size:35px !important;
+}
+
+@media (max-width: 991px) {
+  .tvip-box{
+    padding-top:20px !important;
+
+  }
+  .tvip{
+    font-size:25px !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -50,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background: #020629;
 }
 
 #preloader:before {
@@ -58,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
+  border: 6px solid #020629;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -105,14 +139,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
   border-radius: 50px;
-  background: #191b29;
+  background: #020629;
   color: #ff9900;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
   background: #ff9900;
-  color: #191b29;
+  color: #020629;
 }
 
 /*--------------------------------------------------------------
@@ -126,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header.header-scrolled, #header.header-inner-pages {
   /* background: rgba(40, 58, 90, 0.9); */
-  background: #191b29;
+  background: #020629;
 
 }
 
@@ -173,10 +207,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #fff;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 17px;
   letter-spacing: 0.5px;
   font-weight: 500;
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: Mallory_book;
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -345,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 55px;
   right: 15px;
-  bottom: 15px;
+  /* bottom: 15px; */
   left: 15px;
   z-index: 9999;
   overflow-y: auto;
@@ -366,14 +401,14 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav a {
   display: block;
   position: relative;
-  color: #37517e;
+  color: #020629;
   padding: 10px 20px;
   font-weight: 500;
   outline: none;
 }
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
-  color: #47b2e4;
+  color: #ff9900;
   text-decoration: none;
 }
 
@@ -434,7 +469,9 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #25467b;
+  background: #020629;
+  /* 07091e */
+
 }
 
 #hero .container {
@@ -614,7 +651,7 @@ section {
   display: block;
   width: 40px;
   height: 3px;
-  background: #191b29;
+  background: #020629;
   bottom: 0;
   left: calc(50% - 20px);
 }
@@ -727,7 +764,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: #020629;
 }
 
 .why-us .content h4 {
@@ -847,7 +884,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: #020629;
   font-family: "Poppins", sans-serif;
 }
 
@@ -883,7 +920,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: #020629;
 }
 
 .skills .progress .skill .val {
@@ -935,7 +972,7 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -944,7 +981,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-  color: #191b29;
+  color: #020629;
 }
 
 /*--------------------------------------------------------------
@@ -1093,7 +1130,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team .member {
-  position: relative;
+  /* position: relative; */
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
@@ -1123,7 +1160,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+  color: #020629;
 }
 
 .team .member span {
@@ -1169,7 +1206,7 @@ section {
 }
 
 .team .member .social a i {
-  color: #37517e;
+  color: #020629;
   font-size: 16px;
   margin: 0 2px;
 }
@@ -1206,12 +1243,12 @@ section {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #37517e;
+  color: #020629;
 }
 
 .pricing h4 {
   font-size: 48px;
-  color: #37517e;
+  color: #020629;
   font-weight: 400;
   font-family: "Jost", sans-serif;
   margin-bottom: 25px;
@@ -1338,13 +1375,14 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: Mallory_medium;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 24px;
-  font-weight: 500;
   padding: 0 30px;
   outline: none;
-  color: #191b29;
+  color: #020629;
 
 }
 
@@ -1353,7 +1391,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #191b29;
+  color: #020629;
 }
 
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
@@ -1373,7 +1411,7 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #191b29;
+  color: #020629;
   transition: 0.3s;
 }
 
@@ -1426,14 +1464,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: #020629;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: #020629;
 }
 
 .contact .info .email p {
@@ -1466,7 +1504,7 @@ section {
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
   background: #ff9900;
-  color: #191b29;
+  color: #020629;
 }
 
 .contact .php-email-form {
@@ -1552,7 +1590,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #191b29;
+  background: #020629;
   border: 0;
   padding: 12px 34px;
   color: #ff9900;
@@ -1562,7 +1600,7 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #ff9900;
-  color:#191b29;
+  color:#020629;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1606,7 +1644,7 @@ section {
   color: #ff9900;
 }
 .breadcrumbs a {
-  color: #191b29;
+  color: #020629;
   text-decoration-style: solid;
 }
 
@@ -1739,7 +1777,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: #020629;
 }
 
 #footer .footer-newsletter form {
@@ -1794,7 +1832,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: #020629;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1808,7 +1846,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #191b29;
+  color: #020629;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1855,7 +1893,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #191b29;
+  background: #020629;
   color: #ff9900;
   line-height: 1;
   padding: 8px 0;
