@@ -155,7 +155,7 @@ hr {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 10px 0px 0px 0px;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -179,7 +179,9 @@ hr {
 }
 
 #header .logo img {
-  max-height: 80px;
+  max-height: 140px;
+  margin-top:-30px;
+  margin-bottom:-15px;
 }
 
 /*--------------------------------------------------------------
@@ -502,7 +504,7 @@ hr {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px 0 0 0;
-  color: #fff;
+  color: #000;
   background: #ff9900;
 }
 
